@@ -16,4 +16,13 @@ class Product with ChangeNotifier {
     @required this.imageUrl,
     this.isFavourite = false,
   });
+
+  bool get isFavouriteChecked {
+    return isFavourite;
+  }
+
+  void toogleFavouriteStatus() {
+    isFavourite = !isFavourite;
+    notifyListeners();
+  }
 }

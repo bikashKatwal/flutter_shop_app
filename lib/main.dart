@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         },
         title: kAppName,
         theme: ThemeData(
-          primarySwatch: Colors.purple,
+          brightness: Brightness.dark,
           accentColor: Colors.deepOrange,
           fontFamily: 'Lato',
         ),
